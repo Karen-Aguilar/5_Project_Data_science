@@ -1,12 +1,37 @@
-## Una tienda online de moda, con presencia en todo Brasil, necesita impulsar su rendimiento utilizando sus datos de manera estratégica. Como científico de datos, has sido convocado para analizar estos datos y ofrecer insights que guíen sus decisiones y respondan a las siguientes preguntas clave:
-### **Preguntas**
+# Una tienda online de moda, con presencia en todo Brasil, necesita impulsar su rendimiento utilizando sus datos de manera estratégica. Como científico de datos, has sido convocado para analizar estos datos y ofrecer insights que guíen sus decisiones y respondan a las siguientes preguntas clave:
 
-1. ¿Cual es el Top 5 productos más vendidos históricamente?
+## **Preguntas**
+ 🚀 1. ¿Cual es el Top 5 productos más vendidos históricamente?
+ 🚀 2. ¿Cual es la evolución histórica de las ingresos netos?
+ 🚀 3. ¿Cuáles son los ingresos netos por vendedor por año?
+ 🚀 4. ¿Cuáles son las ciudades que proporcionan mayores ingresos netos?
+ 🚀 5. ¿Existe otro insight que puedas proporcionar?
 
-2. ¿Cual es la evolución histórica de las ingresos netos?
+## Importar e instalar librerias
 
-3. ¿Cuáles son los ingresos netos por vendedor por año?
+# Importa la librería de cálculos
+  import numpy as np
+# Importa la librería para manipular la base de datos
+  import pandas as pd
+# Instalar una librería en un entorno de Jupyter
+  !pip install matplotlib
+# Importa la librería de visualización de datos
+  import matplotlib.pyplot as plt
+# Importa la librería de visualización más detallada
+  import seaborn as sns
 
-4. ¿Cuáles son las ciudades que proporcionan mayores ingresos netos?
+## Importar archivos desdes GitHub
+url = "https://raw.githubusercontent.com/Karen-Aguilar/5_Project_Data_science/main/itens_pedidos.csv"
+df = pd.read_csv(url)
+#Visualizacion rapida de datos.
+df.head()
 
-5. ¿Existe otro insight que puedas proporcionar?
+url = "https://raw.githubusercontent.com/Karen-Aguilar/5_Project_Data_science/main/pedidos.csv"
+df = pd.read_csv(url)
+#Visualizacion rapida de datos.
+df.head()
+
+url = "https://raw.githubusercontent.com/Karen-Aguilar/5_Project_Data_science/main/productos.csv"
+df = pd.read_csv(url)
+#Visualizacion rapida de datos.
+df.head()
